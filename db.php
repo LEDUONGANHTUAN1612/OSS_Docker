@@ -1,6 +1,6 @@
 <?php
 // Ưu tiên lấy từ biến môi trường (trên server), nếu không có thì dùng mặc định (local)
-$servername = getenv('DB_SERVER') ?: 'localhost';
+$servername = getenv('DB_HOST') ?: 'localhost';
 $username = getenv('DB_USER') ?: 'root';
 $password = getenv('DB_PASS') ?: ''; // Mật khẩu mặc định XAMPP thường rỗng
 $dbname = getenv('DB_NAME') ?: 'cuoikioss';
