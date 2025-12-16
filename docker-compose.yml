@@ -5,7 +5,7 @@ services:
   web:
     build: .
     ports:
-      - "8080:80" # Truy cập ở máy ngoài bằng cổng 8080 (localhost:8080)
+      - "8086:80" # Truy cập ở máy ngoài bằng cổng 8080 (localhost:8080)
     depends_on:
       - db
     environment:
